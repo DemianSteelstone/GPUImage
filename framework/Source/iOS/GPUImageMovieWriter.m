@@ -391,13 +391,6 @@ NSString *const kGPUImageColorSwizzlingFragmentShaderString = SHADER_STRING
 
         if (self.encodingLiveVideo) {
             allowWriteAudio = false;
-            if (CMTimeCompare(previousFrameTime, previousAudioTime) == -1) {
-                // recoreded audio frame is longer than video frame
-                willFinish = true;
-                completeHandler = handler;
-                return;
-            }
-            
 
             completeHandler = nil;
             isRecording = NO;
