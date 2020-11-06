@@ -1031,7 +1031,7 @@ NSString *const kGPUImageColorSwizzlingFragmentShaderString = SHADER_STRING
                                          [ NSNumber numberWithInt: 1 ], AVNumberOfChannelsKey,
                                          [ NSNumber numberWithFloat: preferredHardwareSampleRate ], AVSampleRateKey,
                                          [ NSData dataWithBytes: &acl length: sizeof( acl ) ], AVChannelLayoutKey,
-                                         [ NSNumber numberWithInt:AVAudioQualityHigh], AVEncoderAudioQualityKey,
+//                                         [ NSNumber numberWithInt:AVAudioQualityHigh], AVEncoderAudioQualityKey,
                                          [ NSNumber numberWithInt: 128000 ], AVEncoderBitRateKey,
                                          nil];
 /*
